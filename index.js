@@ -57,4 +57,15 @@ function unflipCards() {
       resetgame();
     }, 1500);
   }
+
+function resetgame() {
+    [flipped, gamelocked ] = [false, false];
+    [card1, card2] = [null, null];
+  }
+  
+function restart(){
+  
+    location.reload();
+  
+  }
   
