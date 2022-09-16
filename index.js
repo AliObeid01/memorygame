@@ -27,3 +27,15 @@ function flipCard() {
   card2 = this;
   check_macth_card();
 }
+
+function check_macth_card() {
+    if (card1.dataset.framework === card2.dataset.framework) {
+      match_card();
+      score.innerHTML=`score:${match+=1}`;
+      if(match==3){score.innerHTML=`Greate you have a good memory`}
+      return;
+    }
+   
+    unflipCards();
+  }
+  
