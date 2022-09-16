@@ -38,4 +38,12 @@ function check_macth_card() {
    
     unflipCards();
   }
+
+function match_card() {
+    card1.removeEventListener('click', flipCard);
+    card2.removeEventListener('click', flipCard);
+  
+    resetgame();
+  }
+  
   
