@@ -46,4 +46,15 @@ function match_card() {
     resetgame();
   }
   
+
+function unflipCards() {
+    gamelocked  = true;
+  
+    setTimeout(() => {
+      card1.classList.remove('flip');
+      card2.classList.remove('flip');
+  
+      resetgame();
+    }, 1500);
+  }
   
